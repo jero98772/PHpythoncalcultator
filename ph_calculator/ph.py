@@ -1,6 +1,6 @@
-from math import log, exp, expm1 ,sqrt,log10
+from math import log,sqrt,log10
 Moles=eval(input("entra los moles    \n"))
-kb_o_ka =eval(input("k sub_b o k sub_a  \n exponete es 'e' \n  "))
+kb_o_ka =eval(input("k sub_b o k sub_a  \n exponete es '**' \n  "))
 print("escoje para calcular 'pH' 'pOH' 'H+' o 'OH-'")
 ph ="pH"
 poh ="pOH"
@@ -13,7 +13,7 @@ if entrada.lower() ==ph.lower():
 	paso_dos=sqrt(paso_uno)
 	print("raiz de",paso_dos)
 	paso_tres=-log10(paso_dos)
-	print("log",paso_dos)
+	print("log",paso_tres)
 	if paso_tres>0:
 		paso_cuarto=14-paso_tres
 		print("14-",paso_tres,"=",paso_cuarto)
@@ -26,7 +26,7 @@ if entrada.lower() ==poh.lower():
 	paso_dos=sqrt(paso_uno)
 	print("raiz de",paso_dos)
 	paso_tres=-log10(paso_dos)
-	print("log",paso_dos)
+	print("log",paso_tres)
 	print("POH=",paso_tres)
 if entrada.lower() ==h.lower():
 	paso_uno=Moles*kb_o_ka
@@ -34,7 +34,7 @@ if entrada.lower() ==h.lower():
 	paso_dos=sqrt(paso_uno)
 	print("raiz de",paso_dos)
 	paso_tres=-log10(paso_dos)
-	print("log",paso_dos)
+	print("log",paso_tres)
 	if paso_tres>0:
 		paso_cuatro=14-paso_tres
 		print("14-",paso_tres,"=",paso_cuatro)
@@ -51,7 +51,7 @@ if entrada.lower() ==oh.lower():
 	paso_dos=sqrt(paso_uno)
 	print("raiz de",paso_dos)
 	paso_tres=-log10(paso_dos)
-	print("log",paso_dos)
+	print("log",paso_tres)
 	if paso_tres>0:
 		paso_cuatro=14-paso_tres
 		print("14-",paso_tres,"=",paso_cuatro)
