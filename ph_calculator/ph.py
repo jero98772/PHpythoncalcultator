@@ -1,6 +1,7 @@
 from math import log, exp, expm1 ,sqrt,log10
 Moles=eval(input("entra los moles    \n"))
 kb_o_ka =eval(input("k sub_b o k sub_a  \n exponete es 'e' \n  "))
+print("escoje para calcular 'pH' 'pOH' 'H+' o 'OH-'")
 ph ="pH"
 poh ="pOH"
 h= "H+"
