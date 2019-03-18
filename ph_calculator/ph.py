@@ -1,4 +1,4 @@
-from math import log,sqrt,log10
+from math import log ,sqrt,log10
 Moles=eval(input("entra los moles    \n"))
 kb_o_ka =eval(input("k sub_b o k sub_a  \n exponete es '**' \n  "))
 print("escoje para calcular 'pH' 'pOH' 'H+' o 'OH-'")
@@ -38,13 +38,16 @@ if entrada.lower() ==h.lower():
 	if paso_tres>0:
 		paso_cuatro=14-paso_tres
 		print("14-",paso_tres,"=",paso_cuatro)
-		paso_cinco=10**paso_cuatro
-		print("10elvado",paso_cuatro,"=",paso_cinco)
+		if paso_dos> 0:
+			paso_cinco=10**paso_dos
+			print("10elvado",paso_dos,"=",paso_cinco)
 	else:
+				
 		paso_cuatro=14+paso_tres
 		print("14+",paso_tres,"=",paso_cuatro)
-		paso_cinco=10**paso_cuatro
-		print("10elvado",paso_cuatro,"=",paso_cinco) 
+		if paso_dos< 0:		
+			paso_cinco=-10**paso_dos
+			print("10elvado",paso_dos,"=",paso_cinco) 
 if entrada.lower() ==oh.lower():
 	paso_uno=Moles*kb_o_ka
 	print('"despejamos "',paso_uno)
@@ -55,10 +58,16 @@ if entrada.lower() ==oh.lower():
 	if paso_tres>0:
 		paso_cuatro=14-paso_tres
 		print("14-",paso_tres,"=",paso_cuatro)
-		paso_cinco=10**paso_cuatro
-		print("10elvado",paso_cuatro,"=",paso_cinco)		
+		if paso_dos> 0:
+			paso_cinco=10**paso_dos
+
+			print("10elvado",paso_dos,"=",paso_cinco)		
 	else:
 		paso_cuarto=14+paso_tres
 		print("14+",paso_tres,"=",paso_cuatro)
-		paso_cinco=10**paso_cuatro
-		print("10elvado",paso_cuatro,"=",paso_cinco) 
+			
+		paso_cuatro=14+paso_tres
+		print("14+",paso_tres,"=",paso_cuatro)
+		if paso_dos< 0:		
+			paso_cinco=-10**paso_dos
+			print("10elvado",paso_dos,"=",paso_cinco)  
