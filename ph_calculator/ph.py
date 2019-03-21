@@ -13,16 +13,22 @@ ph ="pH"
 poh ="pOH"
 h= "H+"
 oh="OH-"
-def henderson_hasselbalch(a,b,c):
-	paso_uno=c+log10(a/b)
-	print (paso_uno,'=',c,'+','log10(',a,'/',b,')',)
+def henderson_hasselbalch(a,b,c):#sal,Moles,kb_o_ka
+	paso_uno=log10(c)+log10(a/b)
+	print (paso_uno,'=log(',c,')+','log10(',a,'/',b,')',)
 
 	if paso_uno>0:
 		paso_dos=14-paso_uno
-		print(paso_dos,"=","14-",paso_uno)
+		print(paso_dos,"=","14-",paso_uno)	
 	else:
 		paso_dos=14+paso_uno
 		print(paso_dos,"=","14+",paso_uno)
+	if 14>paso_uno:
+		paso_dos=14-paso_uno
+		print("14-",paso_dos,"=",paso_uno)
+	else:
+		paso_dos=14+paso_uno
+		print("14+",paso_dos,"=",paso_uno)
 def despejar(a,b,c):
 	disc=round(b*b-4*a*c,50)
 	if(a!=0):
@@ -36,7 +42,7 @@ def despejar(a,b,c):
 	  print("X1 = "+str(x1)+" X2 = "+str(x2))
 	else:
 	 print("coefiente cuadratico debe ser diferente de cero")
-	 
+
 if escoje_kb_o_ka.lower()=="kb":
 	if entrada.lower() ==poh.lower():
 		paso_uno=Moles*kb_o_ka				
@@ -88,7 +94,7 @@ if escoje_kb_o_ka.lower()=="ka":
 			print("14+",paso_tres,"=",paso_cuarto)
 	if entrada.lower() == ph2.lower():
 		sal =eval(input("entar las sal\n "))		
-		henderson_hasselbalch(sal,Moles,kb_o_ka)
+		henderson_hasselbalch(Moles,sal,kb_o_ka)
 		
 	if entrada.lower() ==h.lower():
 		paso_uno=Moles*kb_o_ka
