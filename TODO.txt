@@ -1,0 +1,2 @@
+1.pasar a ingles
+2.pasarlo a OOP o funciones (hacelo modular)
