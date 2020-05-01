@@ -14,9 +14,12 @@ soluciones buffer con  henderson hasselbalch
 
 muestra si es ka o kb(constaes de acides y base para de ph mayor que 7)) por los datos que ingresa el usuario
 
-## te mostrara el proseso
-# branch old
-###  master
+## branchs
+
+master
+
+#### old
+
 
 #como usarlo
 
