@@ -13,7 +13,11 @@ la catidad de oh
 soluciones buffer con  henderson hasselbalch
 
 muestra si es ka o kb(constantes de acides y base para de ph mayor que 7)) por los datos que ingresa el usuario
+# branchs
 
+#### master
+
+old
 ## te mostrara el proseso
 
 # como usarlo
