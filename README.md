@@ -21,7 +21,7 @@ master
 #### old
 
 
-#como usarlo
+# como usarlo
 
 con el comando 
 
