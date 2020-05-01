@@ -12,16 +12,16 @@ la catidad de oh
 
 soluciones buffer con  henderson hasselbalch
 
-muestra si es ka o kb(constaes de acides y base para de ph mayor que 7)) por los datos que ingresa el usuario
+muestra si es ka o kb(constantes de acides y base para de ph mayor que 7)) por los datos que ingresa el usuario
 
 ## te mostrara el proseso
 
-#como usarlo
+# como usarlo
 
 con el comando 
 
      python3 python ph_calculator/ph.py      
-y te ira pidiendo datos si es ka o kb (constaes de acides y base)
+y te ira pidiendo datos si es ka o kb (constantes de acides y base)
 
 si es ka se va a calcular H y PH henderson hasselbalch "lo menor 7 en el ph"
 
