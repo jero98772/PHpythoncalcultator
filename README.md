@@ -33,7 +33,5 @@ si es kb se va a calcular oH y Poh "lo mayor 7 en el ph"
 
 ## es un programa para calcular PH a 25°C
 #### contibuye con donaciones 
-	
-	- Bitcoin: bc1qf3eh6ssgzw2t3qyjk2gzwuskq4ctfk8375fg3r
 
-o hacer algo de la lista de TODO 
+hacendo algo de la lista de TODO 
